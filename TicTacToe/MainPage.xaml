@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="TicTacToe.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" x:Name="Display" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Grid Grid.Row="1" Margin="10">
+                <Button Text="New" HorizontalOptions="Center" WidthRequest="100" Clicked="New_Clicked"/>
+            </Grid>
+        </Grid>
+        <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />-->
+    </StackLayout>
+
+</ContentPage>
